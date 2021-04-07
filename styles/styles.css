@@ -1,0 +1,75 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgb(39, 67, 150) 0%,
+    rgb(39, 67, 150) 100%
+  );
+}
+
+p {
+  line-height: 160%;
+  color: #fff;
+  color: rgb(253, 242, 113);
+}
+
+h1 {
+  font-size: 150px;
+  color: rgb(229, 236, 131);
+  font-family: "Belleza";
+  /* font-family: "Karla"; */
+  z-index: 2000;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+img {
+  z-index: -1;
+  margin-left: 20px;
+  fill: grey;
+  width: 350px;
+  position: fixed;
+  /* top: -200px; */
+  z-index: -2;
+  transform: rotate(104deg);
+  transform-origin: center center;
+}
+svg {
+  animation: spin 5s infinite;
+  fill: grey;
+  width: 20%;
+}
+
+.container {
+  width: 50%;
+  min-width: 400px;
+  margin: 100px auto;
+  position: relative;
+  z-index: 1;
+}
+.st0 {
+  color: white;
+}
+img {
+  animation: spin 5s infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    left: 0;
+    width: 50%;
+    opacity: 0.5;
+  }
+  to {
+    transform: rotate(359deg);
+    left: 500px;
+    width: 5%;
+    opacity: 1;
+  }
+}
